@@ -36,7 +36,8 @@ $$\nabla^2 = {\partial^2 \over \partial r_s^2} + {2 \over r_s} {\partial \over \
 where the subscript s indicates that we are using spherical coordinates.
 we will not prove this identity hear as it is well known and would take us to far off of topic to prove.
 
-To simplify things further we will first consider the situation where $R' = 0$ , this creates a situation that is symmetric about the origin, it also results in $|R - R'| = |r| = |r_s|$ , we now wish to find
+To simplify things further we will first consider the situation where $R' = 0$ ,
+ this creates a situation that is symmetric about the origin, it also results in $|R - R'| = |r| = |r_s|$ , we now wish to find
 
 $$ \nabla^2 {1 \over |r_r|} $$
 
@@ -66,13 +67,15 @@ This is of course just one of the many ways to write the generalized strokes the
 
 What is important to notice is that the left hand side is a volume integral over the region S and the right hand side is a surface integral over the boundary of the region S. Also notice that $u_n$ is a unit outward pointing vector to the surface S that we are integrating over.
 
-Now let us go back to our integral, we have already shown that all that we need to integrate over is a sphere of radius r that includes the point $|R-R'| = 0$ , since the Laplacian is zero outside of this region, the integral of everything outside of this region is zero and can be ignored.
+Now let us go back to our integral, we have already shown that all that we need to integrate over is a sphere of radius r that includes the point $|R-R'| = 0$ ,
+ since the Laplacian is zero outside of this region, the integral of everything outside of this region is zero and can be ignored.
 
 As a result, instead of integrating over $R^3$ we can integrate over a finite region of $R^3$ and apply strokes theorem to transform the volume integral into a surface integral, this allows us to complete the integration as follows.
 
 $$-{\nabla^2 \over 4 \pi} \int {F(R', t) \over |R-R'|} dV (R') = - {F(R, t) \over 4 \pi} \int \nabla^2 {1 \over |R-R'|} dV (R') $$
 
-where we are assuming that F is sufficiently well behaved so that we can choose the radius that we are integrating over so that $|F(R',t) - F(R,t)| < \epsilon$ for any choice of $|R - R'| < \delta$ , we will not concern ourselves further with convergence here, and just assume that this is true for F. This is really not that big of a deal as anyone that is familiar with the topology of what is going on here knows, we are just saying that F is a continues function in $R^3$.
+where we are assuming that F is sufficiently well behaved so that we can choose the radius that we are integrating over so that $|F(R',t) - F(R,t)| < \epsilon$ for any choice of $|R - R'| < \delta$ ,
+ we will not concern ourselves further with convergence here, and just assume that this is true for F. This is really not that big of a deal as anyone that is familiar with the topology of what is going on here knows, we are just saying that F is a continues function in $R^3$.
 
 Now notice that
 
@@ -84,7 +87,8 @@ $$ - {F(R, t) \over 4 \pi} \int \nabla' \cdot \nabla' {1 \over |R-R'|} dV (R') =
 
 where we have applied the divergence theorem to transform from a volume integral to a surface integral.
 
-Do not over look what we did hear, up until this point we have been calculating the Laplacian over the un-primed coordinates, this allowed us to show that we only need to integrate around the point $|R-R'| = 0$ however we are now calculating the Laplacian in the primed coordinates, this will not change the value of any function at this point but it will allow us to directly apply the divergence theorem.
+Do not over look what we did hear, up until this point we have been calculating the Laplacian over the un-primed coordinates, this allowed us to show that we only need to integrate around the point $|R-R'| = 0$
+ however we are now calculating the Laplacian in the primed coordinates, this will not change the value of any function at this point but it will allow us to directly apply the divergence theorem.
 
 It should be pointed out that $u_{R-R'}$ is part of $dS(R')$ , I have chosen to write it in this way so that we could ignore the actual coordinates for the moment. We now want to actually write this out and preform the integration. In spherical coordinates we have 
 
